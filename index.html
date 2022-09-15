@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--Header-->
+    <div class="heading">
+        <h1>Engineering Trainees</h1>
+        <h2>Task 2</h2>
+    </div>
+
+    <!--Problem-->
+    <div class="Scenario">
+        <h2>Problem Statement</h2>
+        <p>
+            Hiring a lawyer can get pretty expensive in Pakistan. Two non-technical investors thought of an idea to
+            create an AI-based lawyer that can process textual queries and answer them accordingly with citations to
+            the PPC (Pakistan Penal Code) and Constitution. This is especially useful for people living in remote areas
+            and even urban women looking to get a consultation privately. Luckily, you run a software development
+            business and will be providing them services.
+        </p>
+    </div>
+
+
+    <script src="script.js">
+
+    </script>
+
+    <button class="button button1" onclick="myFunction()">Toggle Hide and Show</button>
+
+    <button class="button button2" onclick="sortList()">Sort List</button>
+
+    <button class="button button3" onclick="shuffleList()">Shuffle List</button>
+
+    <div id="myDIV">
+        <div id=""root>
+        
+        <!--Functional Requirements-->
+        <div class="Functional">
+            <h2>Functional Requirements</h2>
+            <p>Functional requirements are the product features or functions developers must implement to enable users
+                to accomplish their tasks.</p>
+            <ol id="parent1">
+                <li>Authentication of the user whenever they log into the system.</li>
+                <li>An email should be sent to the user if someone uses their credentials to log in to another device.
+                </li>
+                <li>A Verification email is sent to the user whenever they register for the first time on the software
+                    system.</li>
+                <li>The system must allow users to reset their password by clicking on "forgot password" and receiving a
+                    link to their verified email address.</li>
+                <li>The application should take string values as the user textual queries.</li>
+                <li>The application should return answers accordingly by matching keywords in the customer query to the
+                    keywords in the database.</li>
+                <li>The application should also return the citations to PPC and Constitutions with the answers.</li>
+                <li>The application should not reveal any user information to another user.</li>
+                <li>The application should ask if the user wants us to save his queries so he can access them anytime.
+                </li>
+                <li>The application should not save user queries in history if he disagrees since it should be
+                    confidential so that women could use it without fear.</li>
+                <li>The application should ask for user feedback every time the answer is displayed.</li>
+                <li>The user should be able to view all the requests they have made to the e-lawyer as well as delete
+                    them from their account.</li>
+                <li>They can also edit the contents if they have submitted a wrong request.</li>
+                <li>A page with a list of the frequently asked topics.</li>
+                <li>Suggestions based on user keywords.</li>
+                <li>A page having a list of lawyers available for consultation.</li>
+                <li>An option to hire any lawyer from the application for the long-term.</li>
+                <li>An option to review lawyers the user consults.</li>
+                <li>A help chat option must be there.</li>
+                <li>An option to delete the user account.</li>
+            </ol>
+        </div>
+
+        <!--Non Functional Requirements-->
+        <div class="Non-Functional">
+            <h2>Non-Functional Requirements</h2>
+            <p>Nonfunctional requirements are not related to the system functionality; instead, they define how the
+                system should perform.</p>
+            <ol id="parent2">
+                <li>User Authentication must be sent within 30 seconds of the login trial.</li>
+                <li>Login on another device email should be sent within 10 seconds.</li>
+                <li>Verification email for registration should be sent within 10 seconds.</li>
+                <li>Password reset link should be sent within 30 seconds.</li>
+                <li>The first password cannot be reused.</li>
+                <li>Answers must be displayed within 5 seconds of the query entered.</li>
+                <li>The list of lawyers should be loaded within 5 seconds.</li>
+                <li>The application must be scalable enough to handle 500 users.</li>
+                <li>Application should always be available, even whenever maintenance is ongoing.</li>
+                <li>The application should be reliable enough to operate failure-free for a specified period in a
+                    specific environment.</li>
+                <li>The system needs to re-establish to recover the data directly affected by the suspended connection.
+                </li>
+                <li>Monitor the system's health and quickly restore service if it goes into a bad state.</li>
+                <li>A winning mobile app is entirely compatible with the operating systems it is developed for.</li>
+                <li>The application should include simple and intuitive navigation and search feature.</li>
+                <li>Regularly update your app and enrich it with new features.</li>
+                <li>The design needs to be appealing to the senses. Sophistication and creativity should scream through
+                    the screen.</li>
+                <li>The application should be able to render its layout to different screen sizes.</li>
+                <li>Privacy of information, the export of restricted technologies, intellectual property rights, etc.
+                    should be audited.</li>
+                <li>The system needs to be cost-effective to maintain.</li>
+                <li>The system must perform without failure in 95 percent of use cases during a month.</li>
+            </ol>
+        </div>
+    </div>
+</div>
+
+    </div>
+
+    <!--Footer-->
+    <div class="footer">
+        <h4>RidaK#2952</h4>
+        <a href="mailto:ridakhan.kay@example.com">ridakhan.kay@gmail.com</a>
+    </div>
+
+</body>
+<script src="js/jquery-3.6.1.min.js"></script>
+<script>
+    //Sort Function
+    $(function () {
+        $("#parent1").html($("#parent1").children().sort(function () { return 0.5 - Math.random() }));
+        $("#parent2").html($("#parent2").children().sort(function () { return 0.5 - Math.random() }));
+        
+    });
+
+
+</script>
+
+</html>
